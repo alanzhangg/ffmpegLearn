@@ -1,0 +1,65 @@
+libMpegTPEnc/src/tpenc_lib.lo: \
+  /Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libMpegTPEnc/src/tpenc_lib.cpp \
+  /Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libMpegTPEnc/include/tpenc_lib.h \
+  /Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libMpegTPEnc/include/tp_data.h \
+  /Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libSYS/include/machine_type.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/stddef.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/__config \
+  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.0.sdk/usr/include/pthread.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include/stddef.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/__nullptr \
+  /Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libSYS/include/FDK_audio.h \
+  /Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libSYS/include/genericStds.h \
+  /Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libSYS/include/syslib_channelMapDescr.h \
+  /Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libFDK/include/FDK_bitstream.h \
+  /Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libFDK/include/FDK_bitbuffer.h \
+  /Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libFDK/include/FDK_archdef.h \
+  /Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libMpegTPEnc/src/tp_version.h \
+  /Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libMpegTPEnc/src/tpenc_asc.h \
+  /Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libMpegTPEnc/src/tpenc_adts.h \
+  /Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libMpegTPDec/include/tp_data.h \
+  /Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libFDK/include/FDK_crc.h \
+  /Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libMpegTPEnc/src/tpenc_adif.h \
+  /Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libMpegTPEnc/src/tpenc_latm.h
+
+/Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libMpegTPEnc/include/tpenc_lib.h:
+
+/Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libMpegTPEnc/include/tp_data.h:
+
+/Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libSYS/include/machine_type.h:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/stddef.h:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/__config:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.0.sdk/usr/include/pthread.h:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include/stddef.h:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/__nullptr:
+
+/Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libSYS/include/FDK_audio.h:
+
+/Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libSYS/include/genericStds.h:
+
+/Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libSYS/include/syslib_channelMapDescr.h:
+
+/Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libFDK/include/FDK_bitstream.h:
+
+/Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libFDK/include/FDK_bitbuffer.h:
+
+/Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libFDK/include/FDK_archdef.h:
+
+/Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libMpegTPEnc/src/tp_version.h:
+
+/Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libMpegTPEnc/src/tpenc_asc.h:
+
+/Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libMpegTPEnc/src/tpenc_adts.h:
+
+/Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libMpegTPDec/include/tp_data.h:
+
+/Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libFDK/include/FDK_crc.h:
+
+/Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libMpegTPEnc/src/tpenc_adif.h:
+
+/Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libMpegTPEnc/src/tpenc_latm.h:

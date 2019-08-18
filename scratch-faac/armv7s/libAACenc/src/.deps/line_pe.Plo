@@ -1,0 +1,146 @@
+libAACenc/src/line_pe.lo: \
+  /Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libAACenc/src/line_pe.cpp \
+  /Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libAACenc/src/line_pe.h \
+  /Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libFDK/include/common_fix.h \
+  /Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libFDK/include/FDK_archdef.h \
+  /Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libSYS/include/machine_type.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/stddef.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/__config \
+  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.0.sdk/usr/include/pthread.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include/stddef.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/__nullptr \
+  /Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libFDK/include/fixmul.h \
+  /Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libFDK/include/arm/fixmul_arm.h \
+  /Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libFDK/include/abs.h \
+  /Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libFDK/include/clz.h \
+  /Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libFDK/include/arm/clz_arm.h \
+  /Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libFDK/include/fixmadd.h \
+  /Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libFDK/include/arm/fixmadd_arm.h \
+  /Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libFDK/include/fixminmax.h \
+  /Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libFDK/include/cplx_mul.h \
+  /Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libFDK/include/arm/cplx_mul_arm.h \
+  /Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libFDK/include/fixpoint_math.h \
+  /Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libFDK/include/scale.h \
+  /Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libSYS/include/genericStds.h \
+  /Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libFDK/include/arm/scale_arm.h \
+  /Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libAACenc/src/psy_const.h \
+  /Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libAACenc/src/sf_estim.h \
+  /Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libAACenc/src/qc_data.h \
+  /Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libAACenc/src/aacenc.h \
+  /Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libSYS/include/FDK_audio.h \
+  /Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libSYS/include/syslib_channelMapDescr.h \
+  /Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libMpegTPEnc/include/tpenc_lib.h \
+  /Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libMpegTPEnc/include/tp_data.h \
+  /Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libFDK/include/FDK_bitstream.h \
+  /Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libFDK/include/FDK_bitbuffer.h \
+  /Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libSBRenc/include/sbr_encoder.h \
+  /Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libAACenc/src/dyn_bits.h \
+  /Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libAACenc/src/aacenc_tns.h \
+  /Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libAACenc/src/adj_thr_data.h \
+  /Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libAACenc/src/interface.h \
+  /Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libAACenc/src/psy_data.h \
+  /Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libAACenc/src/block_switch.h \
+  /Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libFDK/include/mdct.h \
+  /Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libAACenc/src/bit_cnt.h \
+  /Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libAACenc/src/aacEnc_rom.h \
+  /Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libAACenc/src/psy_configuration.h \
+  /Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libAACenc/src/aacenc_pns.h \
+  /Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libAACenc/src/pnsparam.h \
+  /Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libFDK/include/FDK_tools_rom.h \
+  /Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libFDK/include/FDK_lpc.h
+
+/Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libAACenc/src/line_pe.h:
+
+/Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libFDK/include/common_fix.h:
+
+/Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libFDK/include/FDK_archdef.h:
+
+/Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libSYS/include/machine_type.h:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/stddef.h:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/__config:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.0.sdk/usr/include/pthread.h:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include/stddef.h:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/__nullptr:
+
+/Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libFDK/include/fixmul.h:
+
+/Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libFDK/include/arm/fixmul_arm.h:
+
+/Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libFDK/include/abs.h:
+
+/Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libFDK/include/clz.h:
+
+/Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libFDK/include/arm/clz_arm.h:
+
+/Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libFDK/include/fixmadd.h:
+
+/Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libFDK/include/arm/fixmadd_arm.h:
+
+/Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libFDK/include/fixminmax.h:
+
+/Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libFDK/include/cplx_mul.h:
+
+/Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libFDK/include/arm/cplx_mul_arm.h:
+
+/Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libFDK/include/fixpoint_math.h:
+
+/Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libFDK/include/scale.h:
+
+/Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libSYS/include/genericStds.h:
+
+/Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libFDK/include/arm/scale_arm.h:
+
+/Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libAACenc/src/psy_const.h:
+
+/Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libAACenc/src/sf_estim.h:
+
+/Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libAACenc/src/qc_data.h:
+
+/Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libAACenc/src/aacenc.h:
+
+/Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libSYS/include/FDK_audio.h:
+
+/Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libSYS/include/syslib_channelMapDescr.h:
+
+/Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libMpegTPEnc/include/tpenc_lib.h:
+
+/Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libMpegTPEnc/include/tp_data.h:
+
+/Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libFDK/include/FDK_bitstream.h:
+
+/Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libFDK/include/FDK_bitbuffer.h:
+
+/Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libSBRenc/include/sbr_encoder.h:
+
+/Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libAACenc/src/dyn_bits.h:
+
+/Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libAACenc/src/aacenc_tns.h:
+
+/Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libAACenc/src/adj_thr_data.h:
+
+/Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libAACenc/src/interface.h:
+
+/Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libAACenc/src/psy_data.h:
+
+/Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libAACenc/src/block_switch.h:
+
+/Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libFDK/include/mdct.h:
+
+/Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libAACenc/src/bit_cnt.h:
+
+/Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libAACenc/src/aacEnc_rom.h:
+
+/Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libAACenc/src/psy_configuration.h:
+
+/Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libAACenc/src/aacenc_pns.h:
+
+/Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libAACenc/src/pnsparam.h:
+
+/Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libFDK/include/FDK_tools_rom.h:
+
+/Users/zhangalan/Desktop/ffmpegLearn/fdk-aac/libFDK/include/FDK_lpc.h:

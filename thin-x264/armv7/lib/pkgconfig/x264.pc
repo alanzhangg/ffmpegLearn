@@ -1,4 +1,4 @@
-prefix=/Users/zhangalan/Desktop/thin-x264/armv7
+prefix=/Users/zhangalan/Desktop/ffmpegLearn/thin-x264/armv7
 exec_prefix=${prefix}
 libdir=${exec_prefix}/lib
 includedir=${prefix}/include

@@ -1,139 +1,111 @@
 #!/bin/sh
-# LXH,MXY
-#
+
+CONFIGURE_FLAGS="--enable-static --enable-pic --disable-cli"
+
+ARCHS="arm64 x86_64 i386 armv7 armv7s"
+
 # directories
 SOURCE="x264"
 FAT="fat-x264"
- 
+
 SCRATCH="scratch-x264"
 # must be an absolute path
 THIN=`pwd`/"thin-x264"
- 
-#This is decided by your SDK version.
-SDK_VERSION="13.0"
- 
-cd ./x264
- 
-#============== simulator ===============
-PLATFORM="iPhoneSimulator"
- 
-#i386
-ARCHS="i386"
- 
-export DEVROOT=/Applications/Xcode.app/Contents/Developer/Platforms/${PLATFORM}.platform/Developer
-export SDKROOT=$DEVROOT/SDKs/${PLATFORM}${SDK_VERSION}.sdk
-export CC=$DEVROOT/usr/bin/gcc
-export LD=$DEVROOT/usr/bin/ld
-export CXX=$DEVROOT/usr/bin/g++
-export LIBTOOL=$DEVROOT/usr/bin/libtool
-export HOST=i386-apple-darwin
- 
-COMMONFLAGS="-pipe -gdwarf-2 -no-cpp-precomp -isysroot ${SDKROOT} -fPIC"
-export LDFLAGS="${COMMONFLAGS} -fPIC"
-export CFLAGS="${COMMONFLAGS} -fvisibility=hidden"
- 
- 
-for ARCH in $ARCHS; do
- 
-echo "Building $ARCH ......"
- 
-make clean
-./configure \
---host=i386-apple-darwin \
---sysroot=$SDKROOT \
---prefix="$THIN/$ARCH" \
---extra-cflags="-arch $ARCH -miphoneos-version-min=9.0" \
---extra-ldflags="-L$SDKROOT/usr/lib/system -arch $ARCH -miphoneos-version-min=9.0" \
---enable-pic \
---enable-static \
---disable-asm \
-make && make install && make clean
- 
-echo "Installed: $DEST/$ARCH"
-done
- 
-#x86_64
- 
-ARCHS="x86_64"
- 
-unset DEVROOT
-unset SDKROOT
-unset CC
-unset LD
-unset CXX
-unset LIBTOOL
-unset HOST
-unset LDFLAGS
-unset CFLAGS
- 
-make clean
-for ARCH in $ARCHS; do
- 
-echo "Building $ARCH ......"
- 
-./configure \
---prefix="$THIN/$ARCH" \
---enable-pic \
---enable-static \
---disable-asm \
-make && make install && make clean
- 
-echo "Installed: $DEST/$ARCH"
-done
- 
-#================ iphone ==================
- 
-export PLATFORM="iPhoneOS"
- 
-ARCHS="armv7 armv7s"
- 
-export DEVROOT=/Applications/Xcode.app/Contents/Developer
-export SDKROOT=$DEVROOT/Platforms/${PLATFORM}.platform/Developer/SDKs/${PLATFORM}${SDK_VERSION}.sdk
-DEVPATH=/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS${SDK_VERSION}.sdk
-export CC=$DEVROOT/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang
-export AS=$DEVROOT/Toolchains/XcodeDefault.xctoolchain/usr/bin/as
-COMMONFLAGS="-pipe -gdwarf-2 -no-cpp-precomp -isysroot ${SDKROOT} -marm -fPIC"
-export LDFLAGS="${COMMONFLAGS} -fPIC"
-export CFLAGS="${COMMONFLAGS} -fvisibility=hidden"
-export CXXFLAGS="${COMMONFLAGS} -fvisibility=hidden -fvisibility-inlines-hidden"
- 
- 
-for ARCH in $ARCHS; do
- 
-echo "Building $ARCH ......"
- 
-./configure \
---host=arm-apple-darwin \
---sysroot=$DEVPATH \
---prefix="$THIN/$ARCH" \
---extra-cflags="-arch $ARCH" \
---extra-ldflags="-L$DEVPATH/usr/lib/system -arch $ARCH" \
---enable-pic \
---enable-static \
---disable-asm
- 
-make && make install && make clean
- 
-echo "Installed: $DEST/$ARCH"
- 
-done
- 
-cd ..
- 
-#================ fat lib ===================
- 
-ARCHS="armv7 armv7s i386 x86_64 arm64"
- 
-echo "building fat binaries..."
-mkdir -p $FAT/lib
-set - $ARCHS
-CWD=`pwd`
-cd $THIN/$1/lib
-for LIB in *.a
-do
-cd $CWD
-lipo -create `find $THIN -name $LIB` -output $FAT/lib/$LIB
-done
- 
-cd $CWD
-cp -rf $THIN/$1/include $FAT
+
+COMPILE="y"
+LIPO="y"
+
+if [ "$*" ]
+then
+	if [ "$*" = "lipo" ]
+	then
+		# skip compile
+		COMPILE=
+	else
+		ARCHS="$*"
+		if [ $# -eq 1 ]
+		then
+			# skip lipo
+			LIPO=
+		fi
+	fi
+fi
+
+if [ "$COMPILE" ]
+then
+	CWD=`pwd`
+	for ARCH in $ARCHS
+	do
+		echo "building $ARCH..."
+		mkdir -p "$SCRATCH/$ARCH"
+		cd "$SCRATCH/$ARCH"
+		CFLAGS="-arch $ARCH"
+                ASFLAGS=
+
+		if [ "$ARCH" = "i386" -o "$ARCH" = "x86_64" ]
+		then
+		    PLATFORM="iPhoneSimulator"
+		    CPU=
+		    if [ "$ARCH" = "x86_64" ]
+		    then
+		    	CFLAGS="$CFLAGS -mios-simulator-version-min=7.0"
+		    	HOST="--host=x86_64-apple-darwin"
+		    else
+		    	CFLAGS="$CFLAGS -mios-simulator-version-min=5.0"
+			HOST="--host=i386-apple-darwin"
+		    fi
+		else
+		    PLATFORM="iPhoneOS"
+		    if [ $ARCH = "arm64" ]
+		    then
+		        HOST="--host=aarch64-apple-darwin"
+			XARCH="-arch aarch64"
+		    else
+		        HOST="--host=arm-apple-darwin"
+			XARCH="-arch arm"
+		    fi
+                    CFLAGS="$CFLAGS -fembed-bitcode -mios-version-min=7.0"
+                    ASFLAGS="$CFLAGS"
+		fi
+
+		XCRUN_SDK=`echo $PLATFORM | tr '[:upper:]' '[:lower:]'`
+		CC="xcrun -sdk $XCRUN_SDK clang"
+		if [ $PLATFORM = "iPhoneOS" ]
+		then
+		    export AS="$CWD/$SOURCE/tools/gas-preprocessor.pl $XARCH -- $CC"
+		else
+		    export -n AS
+		fi
+		CXXFLAGS="$CFLAGS"
+		LDFLAGS="$CFLAGS"
+
+		CC=$CC $CWD/$SOURCE/configure \
+		    $CONFIGURE_FLAGS \
+		    $HOST \
+		    --extra-cflags="$CFLAGS" \
+		    --extra-asflags="$ASFLAGS" \
+		    --extra-ldflags="$LDFLAGS" \
+		    --disable-asm \
+		    --prefix="$THIN/$ARCH" || exit 1
+
+		make -j3 install || exit 1
+		cd $CWD
+	done
+fi
+
+if [ "$LIPO" ]
+then
+	echo "building fat binaries..."
+	mkdir -p $FAT/lib
+	set - $ARCHS
+	CWD=`pwd`
+	cd $THIN/$1/lib
+	for LIB in *.a
+	do
+		cd $CWD
+		lipo -create `find $THIN -name $LIB` -output $FAT/lib/$LIB
+	done
+
+	cd $CWD
+	cp -rf $THIN/$1/include $FAT
+fi
