@@ -1,5 +1,5 @@
 SRCPATH=../../x264
-prefix=/Users/zhangalan/Desktop/ffmpegLearn/thin-x264/i386
+prefix=/Users/zyyk-ioskf1/Desktop/demos/ffmpegLearn/thin-x264/i386
 exec_prefix=${prefix}
 bindir=${exec_prefix}/bin
 libdir=${exec_prefix}/lib
@@ -7,13 +7,13 @@ includedir=${prefix}/include
 SYS_ARCH=X86
 SYS=MACOSX
 CC=xcrun -sdk iphonesimulator clang
-CFLAGS=-Wshadow -O3 -ffast-math -m32  -Wall -I. -I$(SRCPATH) -arch i386 -mios-simulator-version-min=5.0 -std=gnu99 -D_GNU_SOURCE -mstack-alignment=64 -fPIC -fomit-frame-pointer -fno-tree-vectorize
+CFLAGS=-Wshadow -O3 -ffast-math -m32  -Wall -I. -I$(SRCPATH) -arch i386 -mios-simulator-version-min=9.0 -std=gnu99 -D_GNU_SOURCE -mstack-alignment=64 -fPIC -fomit-frame-pointer -fno-tree-vectorize
 COMPILER=GNU
 COMPILER_STYLE=GNU
 DEPMM=-MM -g0
 DEPMT=-MT
 LD=xcrun -sdk iphonesimulator clang -o 
-LDFLAGS=-m32  -arch i386 -mios-simulator-version-min=5.0 -lm -lpthread -ldl
+LDFLAGS=-m32  -arch i386 -mios-simulator-version-min=9.0 -lm -lpthread -ldl
 LIBX264=libx264.a
 AR=ar rc 
 RANLIB=ranlib
@@ -32,6 +32,11 @@ PROF_USE_CC=-fprofile-use
 PROF_USE_LD=-fprofile-use
 HAVE_OPENCL=yes
 CC_O=-o $@
+SOSUFFIX=dylib
+SONAME=libx264.157.dylib
+SOFLAGS=-shared -dynamiclib -Wl,-single_module -Wl,-read_only_relocs,suppress -install_name $(DESTDIR)$(libdir)/$(SONAME) 
+default: lib-shared
+install: install-lib-shared
 default: lib-static
 install: install-lib-static
 LDFLAGSCLI = 

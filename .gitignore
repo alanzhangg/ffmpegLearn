@@ -1,1 +1,4 @@
 *.a
+/x264
+/scratch-x264
+/thin-x264

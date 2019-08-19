@@ -1,4 +1,4 @@
-prefix=/Users/zhangalan/Desktop/ffmpegLearn/thin-x264/arm64
+prefix=/Users/zyyk-ioskf1/Desktop/demos/ffmpegLearn/thin-x264/arm64
 exec_prefix=${prefix}
 libdir=${exec_prefix}/lib
 includedir=${prefix}/include
@@ -6,6 +6,6 @@ includedir=${prefix}/include
 Name: x264
 Description: H.264 (MPEG4 AVC) encoder library
 Version: 0.157.x
-Libs: -L${exec_prefix}/lib -lx264 -lpthread -lm -ldl
-Libs.private: 
+Libs: -L${exec_prefix}/lib -lx264 
+Libs.private: -lpthread -lm -ldl
 Cflags: -I${prefix}/include

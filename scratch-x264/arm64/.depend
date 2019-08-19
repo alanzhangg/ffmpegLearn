@@ -375,39 +375,6 @@ common/threadpool-8.o: ../../x264/common/threadpool.c \
   ../../x264/common/frame.h ../../x264/common/dct.h \
   ../../x264/common/quant.h ../../x264/common/threadpool.h \
   ../../x264/common/macroblock.h ../../x264/common/rectangle.h
-common/aarch64/asm-offsets-8.o: ../../x264/common/aarch64/asm-offsets.c \
-  ../../x264/common/common.h ../../x264/common/base.h \
-  ../../x264/common/osdep.h config.h ../../x264/x264.h x264_config.h \
-  ../../x264/common/cpu.h ../../x264/common/tables.h \
-  ../../x264/common/cabac.h ../../x264/common/bitstream.h \
-  ../../x264/common/set.h ../../x264/common/predict.h \
-  ../../x264/common/pixel.h ../../x264/common/mc.h \
-  ../../x264/common/frame.h ../../x264/common/dct.h \
-  ../../x264/common/quant.h ../../x264/common/threadpool.h \
-  ../../x264/common/macroblock.h ../../x264/common/rectangle.h \
-  ../../x264/common/aarch64/asm-offsets.h
-common/aarch64/mc-c-8.o: ../../x264/common/aarch64/mc-c.c \
-  ../../x264/common/common.h ../../x264/common/base.h \
-  ../../x264/common/osdep.h config.h ../../x264/x264.h x264_config.h \
-  ../../x264/common/cpu.h ../../x264/common/tables.h \
-  ../../x264/common/cabac.h ../../x264/common/bitstream.h \
-  ../../x264/common/set.h ../../x264/common/predict.h \
-  ../../x264/common/pixel.h ../../x264/common/mc.h \
-  ../../x264/common/frame.h ../../x264/common/dct.h \
-  ../../x264/common/quant.h ../../x264/common/threadpool.h \
-  ../../x264/common/macroblock.h ../../x264/common/rectangle.h \
-  ../../x264/common/aarch64/mc.h
-common/aarch64/predict-c-8.o: ../../x264/common/aarch64/predict-c.c \
-  ../../x264/common/common.h ../../x264/common/base.h \
-  ../../x264/common/osdep.h config.h ../../x264/x264.h x264_config.h \
-  ../../x264/common/cpu.h ../../x264/common/tables.h \
-  ../../x264/common/cabac.h ../../x264/common/bitstream.h \
-  ../../x264/common/set.h ../../x264/common/predict.h \
-  ../../x264/common/pixel.h ../../x264/common/mc.h \
-  ../../x264/common/frame.h ../../x264/common/dct.h \
-  ../../x264/common/quant.h ../../x264/common/threadpool.h \
-  ../../x264/common/macroblock.h ../../x264/common/rectangle.h \
-  ../../x264/common/aarch64/predict.h ../../x264/common/aarch64/pixel.h
 common/opencl-8.o: ../../x264/common/opencl.c ../../x264/common/common.h \
   ../../x264/common/base.h ../../x264/common/osdep.h config.h \
   ../../x264/x264.h x264_config.h ../../x264/common/cpu.h \
@@ -742,39 +709,6 @@ common/threadpool-10.o: ../../x264/common/threadpool.c \
   ../../x264/common/frame.h ../../x264/common/dct.h \
   ../../x264/common/quant.h ../../x264/common/threadpool.h \
   ../../x264/common/macroblock.h ../../x264/common/rectangle.h
-common/aarch64/asm-offsets-10.o: ../../x264/common/aarch64/asm-offsets.c \
-  ../../x264/common/common.h ../../x264/common/base.h \
-  ../../x264/common/osdep.h config.h ../../x264/x264.h x264_config.h \
-  ../../x264/common/cpu.h ../../x264/common/tables.h \
-  ../../x264/common/cabac.h ../../x264/common/bitstream.h \
-  ../../x264/common/set.h ../../x264/common/predict.h \
-  ../../x264/common/pixel.h ../../x264/common/mc.h \
-  ../../x264/common/frame.h ../../x264/common/dct.h \
-  ../../x264/common/quant.h ../../x264/common/threadpool.h \
-  ../../x264/common/macroblock.h ../../x264/common/rectangle.h \
-  ../../x264/common/aarch64/asm-offsets.h
-common/aarch64/mc-c-10.o: ../../x264/common/aarch64/mc-c.c \
-  ../../x264/common/common.h ../../x264/common/base.h \
-  ../../x264/common/osdep.h config.h ../../x264/x264.h x264_config.h \
-  ../../x264/common/cpu.h ../../x264/common/tables.h \
-  ../../x264/common/cabac.h ../../x264/common/bitstream.h \
-  ../../x264/common/set.h ../../x264/common/predict.h \
-  ../../x264/common/pixel.h ../../x264/common/mc.h \
-  ../../x264/common/frame.h ../../x264/common/dct.h \
-  ../../x264/common/quant.h ../../x264/common/threadpool.h \
-  ../../x264/common/macroblock.h ../../x264/common/rectangle.h \
-  ../../x264/common/aarch64/mc.h
-common/aarch64/predict-c-10.o: ../../x264/common/aarch64/predict-c.c \
-  ../../x264/common/common.h ../../x264/common/base.h \
-  ../../x264/common/osdep.h config.h ../../x264/x264.h x264_config.h \
-  ../../x264/common/cpu.h ../../x264/common/tables.h \
-  ../../x264/common/cabac.h ../../x264/common/bitstream.h \
-  ../../x264/common/set.h ../../x264/common/predict.h \
-  ../../x264/common/pixel.h ../../x264/common/mc.h \
-  ../../x264/common/frame.h ../../x264/common/dct.h \
-  ../../x264/common/quant.h ../../x264/common/threadpool.h \
-  ../../x264/common/macroblock.h ../../x264/common/rectangle.h \
-  ../../x264/common/aarch64/predict.h ../../x264/common/aarch64/pixel.h
 filters/video/cache-10.o: ../../x264/filters/video/cache.c \
   ../../x264/filters/video/video.h ../../x264/input/input.h \
   ../../x264/x264cli.h ../../x264/common/base.h \
