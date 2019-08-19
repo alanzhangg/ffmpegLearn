@@ -58,13 +58,13 @@ then
 		    PLATFORM="iPhoneOS"
 		    if [ $ARCH = "arm64" ]
 		    then
-		        HOST="--host=aarch64-apple-darwin"
-				XARCH="-arch aarch64"
+		        HOST="--host=arm-apple-darwin" #HOST="--host=aarch64-apple-darwin"
+				XARCH="-arch arm"  #XARCH="-arch aarch64"
 		    else
 		        HOST="--host=arm-apple-darwin"
 				XARCH="-arch arm"
 		    fi
-                CFLAGS="$CFLAGS -mios-version-min=9.0" #-fembed-bitcode
+                CFLAGS="$CFLAGS -fembed-bitcode -mios-version-min=9.0" #-fembed-bitcode
                 ASFLAGS="$CFLAGS"
 		fi
 
