@@ -1,18 +1,4 @@
 *.a
-/x264
-/scratch-x264
-/thin-x264
-/fat-x264
-/fat-faac
-/thin-faac
-/fdk-aac
-/scratch-faac
-/scratch
-/scratch-x264
-/FFmpeg-iOS
-/ffmpegdemo
-/thin
-/ffmpeg-4.2
 
 
 
