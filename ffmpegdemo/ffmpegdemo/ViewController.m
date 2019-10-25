@@ -10,23 +10,28 @@
 #include <libavcodec/avcodec.h>
 #include <libavformat/avformat.h>
 #include <libavfilter/avfilter.h>
+#import "AmbaRTSPPlayer.h"
 
 @interface ViewController ()
 
 @end
 
-@implementation ViewController
+@implementation ViewController{
+    AmbaRTSPPlayer * player;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    player = [[AmbaRTSPPlayer alloc] initWithVideo:@"rtsp://172.16.110.236:554/live" usesTcp:NO];
     
-    av_register_all();
-    char info[10000] = {0};
-    printf("%s\n", avcodec_configuration());
-    sprintf(info, "%s\n", avcodec_configuration());
-    NSString * info_ns = [NSString stringWithFormat:@"%s", info];
-    NSLog(@"%@", info_ns);
+    
+//    av_register_all();
+//    char info[10000] = {0};
+//    printf("%s\n", avcodec_configuration());
+//    sprintf(info, "%s\n", avcodec_configuration());
+//    NSString * info_ns = [NSString stringWithFormat:@"%s", info];
+//    NSLog(@"%@", info_ns);
 }
 
 - (IBAction)clicktoprotocol:(id)sender {

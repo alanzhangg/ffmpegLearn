@@ -29,6 +29,7 @@
 		4BC2C12B230BEDD700D9852A /* libiconv.2.4.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BC2C12A230BEDD700D9852A /* libiconv.2.4.0.tbd */; };
 		4BC2C12D230BEDE000D9852A /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BC2C12C230BEDE000D9852A /* CoreMedia.framework */; };
 		4BC2C12F230BEEEB00D9852A /* libbz2.1.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BC2C12E230BEEEB00D9852A /* libbz2.1.0.tbd */; };
+		4BEE50FA236141F0008F5A90 /* AmbaRTSPPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BEE50F9236141F0008F5A90 /* AmbaRTSPPlayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -173,6 +174,8 @@
 		4BC2C12A230BEDD700D9852A /* libiconv.2.4.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.2.4.0.tbd; path = usr/lib/libiconv.2.4.0.tbd; sourceTree = SDKROOT; };
 		4BC2C12C230BEDE000D9852A /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		4BC2C12E230BEEEB00D9852A /* libbz2.1.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.1.0.tbd; path = usr/lib/libbz2.1.0.tbd; sourceTree = SDKROOT; };
+		4BEE50F8236141F0008F5A90 /* AmbaRTSPPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AmbaRTSPPlayer.h; sourceTree = "<group>"; };
+		4BEE50F9236141F0008F5A90 /* AmbaRTSPPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AmbaRTSPPlayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,6 +230,8 @@
 				4BC2C07C230BECF600D9852A /* AppDelegate.m */,
 				4BC2C07E230BECF600D9852A /* ViewController.h */,
 				4BC2C07F230BECF600D9852A /* ViewController.m */,
+				4BEE50F8236141F0008F5A90 /* AmbaRTSPPlayer.h */,
+				4BEE50F9236141F0008F5A90 /* AmbaRTSPPlayer.m */,
 				4BC2C081230BECF600D9852A /* Main.storyboard */,
 				4BC2C084230BECF700D9852A /* Assets.xcassets */,
 				4BC2C086230BECF700D9852A /* LaunchScreen.storyboard */,
@@ -533,6 +538,7 @@
 			files = (
 				4BC2C080230BECF600D9852A /* ViewController.m in Sources */,
 				4BC2C08B230BECF700D9852A /* main.m in Sources */,
+				4BEE50FA236141F0008F5A90 /* AmbaRTSPPlayer.m in Sources */,
 				4BC2C07D230BECF600D9852A /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
